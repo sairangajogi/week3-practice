@@ -1,0 +1,18 @@
+public class Array {
+  public static void main(String[] args) {
+
+    int a = 10; // 4 byte
+    int b = 20; // 4 byte
+    int c = 30; // 4 byte
+
+    // 0 1 2
+    int[] arr = { 10, 20, 30 }; // static memory allocation
+    // 1 2 3 length of array
+
+    // 3 3<3 3
+    for (int i = 0; i < arr.length; i++) {
+      System.out.println(arr[i]);
+
+    }
+  }
+}

@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Removelast {
+
+  public void removeLastElement() {
+    Scanner sc = new Scanner(System.in);
+
+    int[] arr = new int[5];
+
+    for (int i = 0; i < arr.length; i++) {
+
+      System.out.println("Enter number" + (i + 1));
+      arr[i] = sc.nextInt();
+    }
+    int[] newArr = new int[4];
+    for (int i = 0; i < newArr.length; i++) {
+      newArr[i] = arr[i];
+    }
+    for (int i = 0; i < newArr.length; i++) {
+      System.out.println(newArr[i]);
+    }
+  }
+
+  public static void main(String[] args) {
+    Removelast obj = new Removelast();
+    obj.removeLastElement();
+  }
+}
